@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Oussama Jendoubi</title>
 </head>
 <body>
-    <Header>
+    <Header class="topnav">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-    </ul>
-    </nav>
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+        </nav>
     </Header>
-    <section id="home">
+ 
+    <section class="container" id="home">
+            <div class="titre">
         <h1>This is our home page </h1>
+            </div>
+            <div class="txt">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ipsam similique eos maiores voluptatibus ad reprehenderit quis facere dolorum aliquam qui praesentium nihil id tempora, alias iure. Saepe, accusantium aliquam!</p>
+            
+         
         <img src="./images/Profile data-amico.png" alt="" width="300px" height="300px">
+            </div>
     </section>
-    <section id="about">
-        <ol>
+    <section class="form" id="about">
+        <h1>About</h1>
+        <div class="container-form">
+        <ol class="list">
             <li>Name : oussama</li>
             <li> Last name : Jendoubi</li>
             <li> Phone number : 0054545785</li>
@@ -36,18 +45,18 @@
                 </ol>
             </li>
         </ol>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/s4bwEbjOgWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/s4bwEbjOgWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         </iframe>
-        <br/>
-        <br/>
+    </div>
     </section>
     <section id="contact">
+        <h1>Contact</h1>
         <form>
-            <label for="fullname">Full Name</label>
+            <label for="fullname">Full Name :</label>
             <input type="text" name="Full Name"> <br>
-            <label for="email">Email</label> 
+            <label for="email">Email :</label> 
             <input type="text" name="Email"><br>
-            <label for="number">Number</label> 
+            <label for="number">Number :</label> 
             <input type="number" name="Number"> <br>
 
             <textarea name="message" cols="30" rows="8">
@@ -62,22 +71,21 @@
     </section>
     <section id="work">
         <h1> My Work</h1>
-
+        <div class="imgs">
         <img src="./images/css.png" alt="">
         <img src="./images/react.png" alt="">
+         </div>
 
     </section>
     <section id="resume">
         <h1>Resume</h1>
         <h3> Conclusion</h3>
-        <p>I am grateful for this opportunity to have this experience in MyGoMycode./p>
+        <p>I am grateful for this opportunity to have this experience in MyGoMycode.</p>
 
     </section>
-    <br>
-    <br>
-    <br>
-    <h1>The footer element</h1>
+    
     <footer>
+        <h1>The footer element</h1>
         <p>Author: Oussama Jendoubi</p>
         <p><a href="oussemajend@gmail.com">oussemajendo@gmail.com</a></p>
       </footer>
